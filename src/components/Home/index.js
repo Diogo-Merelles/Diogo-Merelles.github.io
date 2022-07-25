@@ -8,10 +8,11 @@ const Home = () => {
             <div className="text-zone">
                 <h1>Hi, <br />I'm Diogo.
                 <br />
+                <div className="linebreak"></div>
                 Front-end Developer
                 </h1>
-                <div className="contact-button"> 
-                <Link to="/contact">
+                <div> 
+                <Link to="/contact" className='contact-button'>
                     CONTACT ME
                 </Link>
                 </div>
