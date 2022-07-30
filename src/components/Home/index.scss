@@ -1,5 +1,14 @@
 .home-page {
 
+    .home-animation {
+        position: absolute;
+        left: 800px;
+        bottom: -150px; 
+        width: 800px;  
+        height: 700px;
+    }
+
+
     .linebreak {
         display: block; 
         overflow: hidden; 
@@ -24,7 +33,7 @@
         border: 1px solid #ffd700;
         margin-top: 25px;
         float: left;
-        animation: fadeInAnimation 1s 1.8s backwards;
+        animation: fadeIn 1s 5s backwards;
         white-space: nowrap;
 
         &:hover {

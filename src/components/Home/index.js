@@ -3,6 +3,7 @@ import './index.scss';
 import { useState, useEffect } from "react";
 import AnimatedLetters from "../AnimatedLetters";
 import Logo from "./Logo";
+import Spline from '@splinetool/react-spline';
 
 const Home = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
@@ -13,9 +14,8 @@ const Home = () => {
         setTimeout(() => {
         return setLetterClass('text-animate-hover')
         }, 5000)
-      }, [])
+      }, []);
 
-      
 
     return (
 
@@ -46,9 +46,10 @@ const Home = () => {
                     CONTACT ME
                 </Link>
                 </div>
-            
+                <div className="home-animation">
+                <Spline scene="https://prod.spline.design/fBEI7yvGRLm8D7rd/scene.splinecode" />
+                </div>
             </div>
-            <Logo />
         </div>
         </>
 
