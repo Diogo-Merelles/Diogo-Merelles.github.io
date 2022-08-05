@@ -47,6 +47,9 @@ const Home = () => {
                 <Link to="/contact" className='contact-button'>
                     CONTACT ME
                 </Link>
+                <a href= "/Diogo_Merelles_CV.pdf" className="cv-button" target="_blank" rel="noreferrer" download>
+                    DOWNLOAD MY CV
+                </a>
                 </div>
                 <div className="home-animation">
                 <Spline scene="https://prod.spline.design/fBEI7yvGRLm8D7rd/scene.splinecode" />

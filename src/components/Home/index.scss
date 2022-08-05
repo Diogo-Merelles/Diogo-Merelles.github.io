@@ -22,7 +22,7 @@
 
     }
 
-    .contact-button {
+    .contact-button, .cv-button {
         color: #ffd700;
         font-size: 13px;
         font-weight: 400;
@@ -41,6 +41,10 @@
             color: #333
         }
 
+    }
+
+    .cv-button {
+        margin-left: 100px;
     }
 
     .text-zone {
