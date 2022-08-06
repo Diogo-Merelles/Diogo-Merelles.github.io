@@ -11,6 +11,8 @@ import {
   faReact,
 } from '@fortawesome/free-brands-svg-icons'
 import LogoS from '../../images/logo-s.png'
+import Loader from 'react-loaders';
+
 
 const About = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -42,7 +44,7 @@ const About = () => {
           <p>
             Coming from a background in Communication and Marketing, I've always
             been interested in Tech. Finally deciding to pursue this challenge,
-            I enrolled in programming Boot-camp.
+            I enrolled in a programming Boot-camp.
           </p>
           <p>
             That's when I found out about the wonderful world of coding and web
@@ -98,12 +100,13 @@ const About = () => {
                 <FontAwesomeIcon icon={faJsSquare} color="#EFD81D" />
               </div>
               <div className="face-6">
-                <img src={LogoS} alt="home-logo" width="10" height="10" />
+                <img src={LogoS} alt="home-logo" width="100" height="100" />
               </div>
             </div>
           </div>
         </div>
       </div>
+      <Loader type="pacman" />
     </>
   )
 }
