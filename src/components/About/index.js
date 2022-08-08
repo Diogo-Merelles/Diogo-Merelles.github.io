@@ -1,7 +1,7 @@
 import './index.scss'
 import AnimatedLetters from '../AnimatedLetters'
 import { Link } from 'react-router-dom'
-import { useState, useEffect } from 'react'
+import { useState, useEffect,  } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faCss3,
@@ -11,22 +11,51 @@ import {
   faReact,
 } from '@fortawesome/free-brands-svg-icons'
 import LogoS from '../../images/logo-s.png'
-import Loader from 'react-loaders';
+import ClockLoader from "react-spinners/ClockLoader";
 
 
 const About = () => {
+
+  //loader
+  const  [loading, setLoading] = useState(true)
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false)
+    }, 1300)
+  }, [])
+
+
   const [letterClass, setLetterClass] = useState('text-animate')
   const aboutArr = ['A', 'b', 'o', 'u', 't', ' ', 'm', 'e']
 
   useEffect(() => {
     setTimeout(() => {
       return setLetterClass('text-animate-hover')
-    }, 3000)
-  }, [])
+    }, 5000)
+  }, []);
 
   return (
     <>
+      
       <div className="container about-page">
+
+        
+        {
+          loading ?
+
+          <div className="loader">
+          <ClockLoader
+          size={150}
+          color={"#ffd700"}
+          loading={loading}
+          speedMultiplier={1.5}
+          
+        /> 
+        </div>
+
+          :
+        <>
         <div className="text-zone">
           <h1>
             <AnimatedLetters
@@ -35,6 +64,7 @@ const About = () => {
               index={15}
             />
           </h1>
+        
           <p>Hi!</p>
           <p>
             Welcome, my name is Diogo and I'm a aspiring front-end developer,
@@ -69,6 +99,7 @@ const About = () => {
             feel free to contact me!
           </p>
         </div>
+
         <div>
           <Link to="/contact" className="contact-button">
             CONTACT ME
@@ -103,12 +134,16 @@ const About = () => {
                 <img src={LogoS} alt="home-logo" width="100" height="100" />
               </div>
             </div>
-          </div>
+          </div> 
         </div>
-      </div>
-      <Loader type="pacman" />
+        </>
+        }
+      </div> 
+         
     </>
+        
   )
 }
+
 
 export default About
