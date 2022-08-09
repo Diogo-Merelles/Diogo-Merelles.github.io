@@ -1,5 +1,14 @@
 .home-page {
 
+    .loader {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        height: 100vh;
+    }
+    
     .home-animation {
         position: absolute;
         left: 800px;

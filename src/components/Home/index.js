@@ -3,10 +3,20 @@ import './index.scss';
 import { useState, useEffect } from "react";
 import AnimatedLetters from "../AnimatedLetters";
 import Spline from '@splinetool/react-spline';
+import ClockLoader from "react-spinners/ClockLoader";
+
 
 
 
 const Home = () => {
+    const  [loading, setLoading] = useState(true)
+
+    useEffect(() => {
+      setTimeout(() => {
+        setLoading(false)
+      }, 1300)
+    }, [])
+
     const [letterClass, setLetterClass] = useState('text-animate')
     const nameArr = [' ', 'D', 'i', 'o', 'g', 'o', '.'];
     const jobArr = ['F', 'r', 'o', 'n', 't', '-', 'e', 'n', 'd', ' ', 'D', 'e', 'v', 'e', 'l', 'o', 'p', 'e', 'r',];
@@ -23,6 +33,21 @@ const Home = () => {
         <>
         
         <div className="container home-page">
+            {
+                loading ?
+
+                <div className="loader">
+                <ClockLoader
+                size={150}
+                color={"#ffd700"}
+                loading={loading}
+                speedMultiplier={1.5}
+                
+              /> 
+              </div>
+
+              :
+            
             <div className="text-zone">
                 <h1>
                 <span className={letterClass}>H</span>
@@ -55,6 +80,7 @@ const Home = () => {
                 <Spline scene="https://prod.spline.design/fBEI7yvGRLm8D7rd/scene.splinecode" />
                 </div>
             </div>
+            }
         </div>
         </>
 
