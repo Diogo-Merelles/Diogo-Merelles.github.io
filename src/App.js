@@ -3,6 +3,7 @@ import Home from './components/Home'
 import { Routes, Route, Outlet } from 'react-router-dom'
 import About from './components/About'
 import Sidebar from './components/Sidebar'
+import Contact from './components/Contact'
 
 
 
@@ -30,6 +31,7 @@ function App() {
     <Routes>
     <Route path="/" element={<Home />} />
     <Route path="about" element={<About />} />
+    <Route path="contact" element={<Contact />} />
   </Routes>
   </>
   )
