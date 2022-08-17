@@ -4,6 +4,8 @@ import { useState, useEffect } from 'react';
 import AnimatedLetters from '../AnimatedLetters'
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import ContactImage from '/home/diogo/react-portfolio/src/images/Software-Developer.svg'
+
 
 
 const Contact = () => {
@@ -52,7 +54,7 @@ const Contact = () => {
 
     return (
         <>
-            <div className="container contact-page"></div>
+            <div className="container contact-page">
             {
                 loading ?
 
@@ -111,6 +113,9 @@ const Contact = () => {
                   >DOWNLOAD MY CV</a>
               </div>
             }
+              <img className="contact-image" src={ContactImage} alt="Developer"/>
+
+            </div>
         </>
     )
 }
