@@ -40,8 +40,8 @@ const Contact = () => {
     }, 5000)
   }, []);
 
-    //const strAniLetters = ['C', 'o', 'n', 't', 'a', 'c', 't', ' ', 'm', 'e']
-    const strAniLetters = 'Contact me'.split('')
+    const ContactPageTitle = 'Contact me'
+    const strAniLetters = ContactPageTitle.split('')
 
     const  [loading, setLoading] = useState(true)
 

@@ -2,8 +2,9 @@ import { Link } from "react-router-dom";
 import './index.scss';
 import { useState, useEffect } from "react";
 import AnimatedLetters from "../AnimatedLetters";
-import Spline from '@splinetool/react-spline';
-import ClockLoader from "react-spinners/ClockLoader";
+import ClockLoader from 'react-spinners/ClockLoader';
+import React from 'react';
+import GifAnimation from '/home/diogo/react-portfolio/src/videos/gifcity.mp4';
 
 
 
@@ -50,7 +51,7 @@ const Home = () => {
             
             <div className="text-zone">
                 <h1>
-                <span className={letterClass}>H</span>
+                <span className={`${letterClass} _11`}>H</span>
                 <span className={`${letterClass} _12`}>i</span>
                 <span className={`${letterClass} _13`}>,</span>
 
@@ -76,8 +77,8 @@ const Home = () => {
                     DOWNLOAD MY CV
                 </a>
                 </div>
-                <div className="home-animation">
-                <Spline scene="https://prod.spline.design/fBEI7yvGRLm8D7rd/scene.splinecode" />
+                <div className="gif-animation">
+                <video src={GifAnimation} autoPlay="true" loop="true" height="850px" width="700px"/>
                 </div>
             </div>
             }
