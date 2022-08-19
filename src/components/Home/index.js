@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import AnimatedLetters from "../AnimatedLetters";
 import ClockLoader from 'react-spinners/ClockLoader';
 import React from 'react';
-import GifAnimation from '/home/diogo/react-portfolio/src/videos/gifcity.mp4';
+import ContactImage from '/home/diogo/react-portfolio/src/images/Software-Developer.svg'
 
 
 
@@ -77,10 +77,8 @@ const Home = () => {
                     DOWNLOAD MY CV
                 </a>
                 </div>
-                <div className="gif-animation">
-                <video src={GifAnimation} autoPlay="true" loop="true" height="850px" width="700px"/>
+                <img className="contact-image" src={ContactImage} alt="Developer"/>
                 </div>
-            </div>
             }
         </div>
         </>

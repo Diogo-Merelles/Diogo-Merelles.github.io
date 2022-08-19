@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import AnimatedLetters from '../AnimatedLetters'
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
-import ContactImage from '/home/diogo/react-portfolio/src/images/Software-Developer.svg'
+import GifAnimation from '/home/diogo/react-portfolio/src/videos/gifcity.mp4';
 
 
 
@@ -70,7 +70,7 @@ const Contact = () => {
 
               :
 
-              <div className="text-zone">
+              <div className="contact-text-zone">
                 <h1>
                 <AnimatedLetters 
                   letterClass={letterClass}
@@ -113,8 +113,9 @@ const Contact = () => {
                   >DOWNLOAD MY CV</a>
               </div>
             }
-              <img className="contact-image" src={ContactImage} alt="Developer"/>
-
+             <div className="gif-box">
+                <video src={GifAnimation} className="gif-animation" autoPlay="true" loop="true" height="850px" width="700px"/>
+                </div>
             </div>
         </>
     )

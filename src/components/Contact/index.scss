@@ -7,7 +7,7 @@
         height: 100vh;
     }
 
-.text-zone {
+.contact-text-zone {
         position: absolute;
         left: 10%;
         top: 50%;
@@ -164,14 +164,15 @@
 
 }
 
-.contact-image {
-    position: absolute;
-    left: 1000px;
-    top: 100px;
-    opacity: 0;
-    animation: fadeInUp 2s 2s;
-    animation-fill-mode: forwards;
-    clear: both;
-}
+.gif-animation {
+        position: absolute;
+        left: 1100px;
+        bottom: 30px; 
+        overflow: hidden;
+        opacity: 0;
+        animation: fadeInUp 2s 2s;
+        animation-fill-mode: forwards;
+        clear: both;
+        
+    }
 
-  

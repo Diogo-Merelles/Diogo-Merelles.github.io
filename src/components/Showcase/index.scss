@@ -1,0 +1,94 @@
+.container {
+
+.showcase-text-zone {
+    position: absolute;
+    left: 10%;
+    top: 22%;
+    transform: translateY(-50%);
+    width: 35%;
+    vertical-align: middle;
+    display: table-cell;
+    max-height: 100%;
+
+    h1 {
+        font-size: 53px;
+        font-family: 'Coolvetica';
+        color: #ffd700;
+        font-weight: 400;
+        margin-top: 0px;
+        position: relative;
+        margin-bottom: 70px;
+        left: 10px;
+
+        &::before {
+            content: '<h1>';
+            font-family: 'La Belle Aurore';
+            font-size: 18px;
+            position: absolute;
+            margin-top: -10px;
+            left: -10px;
+            opacity: 0.6;
+            line-height: 18px;
+        }
+
+        &::after {
+            content: '</h1>';
+            font-family: 'La Belle Aurore';
+            font-size: 18px;
+            line-height: 18px;
+            position: absolute;
+            left: -30px;
+            bottom: -20px;
+            margin-left: 20px;
+            opacity: 0.6;
+        }
+    }
+
+    p {
+        font-size: 16px;
+        color: #fff;
+        font-family: sans-serif;
+        font-weight: 400;
+        min-width: fit-content;
+        animation: pulse 1s;
+        
+    }
+}
+
+.text-animate-hover {
+    &:hover {
+        color: #fff;
+    }
+}
+
+
+.images-list {
+    display: flex;
+    position: absolute;
+    gap: 50px;
+    flex-wrap: nowrap;
+    margin-top: -20px;
+
+}
+
+    .project {
+        position: relative;
+        flex: 1 1 20%;
+        animation: fadeInUp 2s;
+        margin: 0 auto;
+        transition: transform .2s;
+        opacity: 0.7;
+
+
+
+        &:hover {
+    
+            cursor: pointer;
+            border: 2px solid #ffd700;
+            transform: scale(1.2);
+            opacity: 1;
+    
+        }
+    }
+
+}

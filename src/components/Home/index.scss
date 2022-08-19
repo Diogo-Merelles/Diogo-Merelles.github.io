@@ -1,11 +1,15 @@
 .home-page {
 
-
-    .gif-animation {
+     .contact-image {
         position: absolute;
-        left: 820px;
-        bottom: -280px; 
+        left: 720px;
+        top: -130px;
+        opacity: 0;
+        animation: fadeInUp 2s 2s;
+        animation-fill-mode: forwards;
+        clear: both;
     }
+    
 
     .loader {
         display: flex;
