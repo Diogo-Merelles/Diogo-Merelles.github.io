@@ -72,27 +72,27 @@ const Showcase = () => {
                 <div className="images-list">
                   <div className="project">
                   <a href="https://github.com/Diogo-Merelles/CheeseMaster" target="_blank" rel="noreferrer">
-                    <img src={Trivia} height="250px" width="250px" alt="project" />
+                    <img src={Trivia} height="230px" width="230px" alt="project" />
                   </a>
                   </div>
                   <div className="project">
                   <a target="_blank" href="https://github.com/Diogo-Merelles/Z-Cupid" rel="noreferrer">
-                    <img src={Cupid} height="250px" width="250px" alt="project"/>
+                    <img src={Cupid} height="230px" width="230px" alt="project"/>
                   </a> 
                   </div>
                   <div className="project">
                   <a target="_blank" href="https://github.com/Diogo-Merelles/minibank" rel="noreferrer">
-                    <img src={Javabank} height="250px" width="250px" alt="project"/>
+                    <img src={Javabank} height="230px" width="230px" alt="project"/>
                   </a>
                   </div>
                   <div className="project">
                   <a target="_blank" href="https://github.com/Diogo-Merelles/Sokoban-VideoGame" rel="noreferrer">
-                    <img src={Sokoban} height="250px" width="250px" alt="project"/>
+                    <img src={Sokoban} height="230px" width="230px" alt="project"/>
                   </a>
                   </div>
                   <div className="project">
                   <a target="_blank" href="https://github.com/Diogo-Merelles/diogo-merelles.github.io/tree/main" rel="noreferrer">
-                    <img src={Portfolio} height="250px" width="250px" alt="project"/>
+                    <img src={Portfolio} height="230px" width="230px" alt="project"/>
                   </a>
                   </div>
                 </div>

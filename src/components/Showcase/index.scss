@@ -62,20 +62,18 @@
 }
 
 
-// .images-list {
-//     display: flex;
-//     position: absolute;
-//     gap: 50px;
-//     flex-wrap: nowrap;
-//     margin-top: -20px;
+.images-list {
+    display: flex;
+    position: absolute;
+    gap: 50px;
+    flex-wrap: nowrap;
+    margin-top: -10px;
 
-// }
+}
 
     .project {
         position: relative;
-        flex: 1 1 20%;
         animation: fadeInUp 2s;
-        margin: 0 auto;
         transition: transform .2s;
         opacity: 0.7;
 
@@ -84,20 +82,10 @@
         &:hover {
     
             cursor: pointer;
-            border: 2px solid #ffd700;
             transform: scale(1.2);
             opacity: 1;
     
         }
     }
-
-}
-
-.images-list {
-    display: flex;
-    position: absolute;
-    gap: 50px;
-    flex-wrap: nowrap;
-    margin-top: -20px;
 
 }
