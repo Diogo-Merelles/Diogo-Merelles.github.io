@@ -57,7 +57,7 @@ const Contact = () => {
     
       async function updateQuote() {
         try {
-          const response = await fetch("https://api.quotable.io/random");
+          const response = await fetch("https://api.quotable.io/random?tags=technology");
           const { statusCode, statusMessage, ...data } = await response.json();
           if (!response.ok) throw new Error(`${statusCode} ${statusMessage}`);
           setData(data);
