@@ -4,7 +4,6 @@ import { useState, useEffect } from 'react';
 import AnimatedLetters from '../AnimatedLetters'
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
-import GifAnimation from '/home/diogo/react-portfolio/src/videos/gifcity.mp4';
 
 
 
@@ -50,6 +49,30 @@ const Contact = () => {
         setLoading(false)
       }, 1300)
     }, [])
+
+    
+    //Random Quote API
+     
+      const [data, setData] = React.useState(null);
+    
+      async function updateQuote() {
+        try {
+          const response = await fetch("https://api.quotable.io/random");
+          const { statusCode, statusMessage, ...data } = await response.json();
+          if (!response.ok) throw new Error(`${statusCode} ${statusMessage}`);
+          setData(data);
+        } catch (error) {
+         
+          console.error(error);
+          setData({ content: "Opps... Something went wrong" });
+        }
+      }
+    
+      React.useEffect(() => {
+        updateQuote();
+      }, []);
+    
+      if (!data) return null;
 
 
     return (
@@ -113,9 +136,16 @@ const Contact = () => {
                   >DOWNLOAD MY CV</a>
               </div>
             }
-             <div className="gif-box">
-                <video src={GifAnimation} className="gif-animation" autoPlay="true" loop="true" height="850px" width="700px"/>
-                </div>
+            <div className="Quote-box">
+              <div className="cite-area">
+              <h1>"{data.content}"</h1>
+              <cite> - {data.author}</cite>
+              </div>
+               <div>
+                <button onClick={updateQuote} className="button-quote">New Quote</button>
+               </div>
+            </div>
+           
             </div>
         </>
     )

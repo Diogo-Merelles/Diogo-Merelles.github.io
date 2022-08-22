@@ -164,15 +164,54 @@
 
 }
 
-.gif-animation {
-        position: absolute;
-        left: 1100px;
-        bottom: 30px; 
-        overflow: hidden;
-        opacity: 0;
-        animation: fadeInUp 2s 2s;
-        animation-fill-mode: forwards;
-        clear: both;
+.Quote-box {
+    height: auto;
+    width: auto;  
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    margin-right: 5%;
+    border-radius: 15px;
+    //overflow: scroll;
+    animation: fadeIn 3s 3s backwards;
+
+        .cite-area {
+            padding: 20px;
+        }
+
+        h1, cite {
+            color: #fff;
+            font-size: 40px;
+
+        }
+
+        cite {
+            font-size: 30px;
+        }
+
+        .button-quote {
+            position: relative;
+            width: 150px;
+            height: 50px;
+            left: 25px;
+            padding: 10px;
+            color: #ffd700;
+            font-size: 13px;
+            font-weight: 400;
+            letter-spacing: 4px;
+            font-family: sans-serif;
+            text-decoration: none;
+            border: 1px solid #ffd700;
+            animation: fadeIn 3s 3s backwards;
+            background: none;
+            cursor: pointer;
         
-    }
+            &:hover {
+                background: #ffd700;
+                color: #333
+            }  
+         }
+   
+}
+
 
