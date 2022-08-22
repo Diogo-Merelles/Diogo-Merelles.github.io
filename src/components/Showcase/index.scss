@@ -62,14 +62,14 @@
 }
 
 
-.images-list {
-    display: flex;
-    position: absolute;
-    gap: 50px;
-    flex-wrap: nowrap;
-    margin-top: -20px;
+// .images-list {
+//     display: flex;
+//     position: absolute;
+//     gap: 50px;
+//     flex-wrap: nowrap;
+//     margin-top: -20px;
 
-}
+// }
 
     .project {
         position: relative;
@@ -90,5 +90,14 @@
     
         }
     }
+
+}
+
+.images-list {
+    display: flex;
+    position: absolute;
+    gap: 50px;
+    flex-wrap: nowrap;
+    margin-top: -20px;
 
 }

@@ -6,6 +6,7 @@ import Trivia from '/home/diogo/react-portfolio/src/images/trivia.jpg'
 import Cupid from '/home/diogo/react-portfolio/src/images/cupid.jpg'
 import Javabank from '/home/diogo/react-portfolio/src/images/javabank.jpg'
 import Sokoban from '/home/diogo/react-portfolio/src/images/sokoban.png'
+import Portfolio from '/home/diogo/react-portfolio/src/images/portfolio-image.jpg'
 
 
 const Showcase = () => {
@@ -87,6 +88,11 @@ const Showcase = () => {
                   <div className="project">
                   <a target="_blank" href="https://github.com/Diogo-Merelles/Sokoban-VideoGame" rel="noreferrer">
                     <img src={Sokoban} height="250px" width="250px" alt="project"/>
+                  </a>
+                  </div>
+                  <div className="project">
+                  <a target="_blank" href="https://github.com/Diogo-Merelles/diogo-merelles.github.io/tree/main" rel="noreferrer">
+                    <img src={Portfolio} height="250px" width="250px" alt="project"/>
                   </a>
                   </div>
                 </div>
