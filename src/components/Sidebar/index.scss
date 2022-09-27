@@ -1,6 +1,6 @@
 .nav-bar {
     background: #181818;
-    width: 12rem;
+    width: 10rem;
     height: 100%;
     position: absolute;
     top: 0;
@@ -60,7 +60,7 @@ nav {
 
         &:after {
             content: '';
-            font-size: 19px;
+            font-size: 16px;
             letter-spacing: 2px;
             position: absolute;
             bottom: 0;
@@ -95,6 +95,7 @@ nav {
     a.portfolio-link {
         &:after {
             content: 'MY WORK'
+            
         }
     }
 
