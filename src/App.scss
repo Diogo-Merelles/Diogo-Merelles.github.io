@@ -26,6 +26,17 @@ textarea {
   font-family: 'Helvetica Neue';
 }
 
+@media screen and(max-width: 1200px) {
+  .page {
+    position: initial;
+  }
+
+  .container {
+    position: initial;
+    height: auto;
+    min-height: auto;
+  }
+}
 
 
 

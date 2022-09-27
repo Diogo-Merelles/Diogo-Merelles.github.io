@@ -138,4 +138,41 @@
         margin-left: -20px;
     }
     
-    
+    @media screen and(max-width: 1200px) {
+            .tags,
+            .contact-image,
+            .home-page h1::before,
+            .home-page h1::after {
+                display: none;
+            }
+
+            .home-page {
+                .text-zone {
+                    position: initial;
+                    width: 100%;
+                    transform: none;
+                    padding: 10px;
+                    box-sizing: border-box;
+
+                    h1 {
+                        font-size: 77px;
+                        margin-top: -20px;
+                        margin-bottom: 40px;
+                    }
+                    
+                }
+
+                .cv-button, .contact-button {
+                    float:none;
+                    display: block;
+                    margin: 25px auto auto;
+                    width: 125px;
+
+                    
+                }
+                .cv-button {
+                    width: 165px;
+                }
+
+            }
+    }
