@@ -26,7 +26,8 @@ textarea {
   font-family: 'Helvetica Neue';
 }
 
-@media screen and(max-width: 1200px) {
+@media screen and (max-width: 1200px) {
+
   .page {
     position: initial;
   }
@@ -39,6 +40,7 @@ textarea {
     &.about-page,
     &.contact-page,
     &.showcase-page {
+
         
       .text-zone {
         position: initial;
@@ -47,7 +49,7 @@ textarea {
         display: block;
         padding: 20px;
         box-sizing: border-box;
-
+        
 
         }
     }

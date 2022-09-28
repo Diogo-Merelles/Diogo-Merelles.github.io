@@ -13,14 +13,16 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-@media screen and(max-width: 1200px) {
+@media screen and (max-width: 1200px) {
+  
   html, body {
     overflow-x: hidden;
-    
   }
 
   body {
     width: 100%;
+    overflow-y: visible;
+
   }
 
   page {
@@ -31,6 +33,7 @@ body {
     position: initial;
     height: auto;
     min-height: auto;
+
   }
 }
 
