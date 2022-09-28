@@ -138,7 +138,7 @@
         margin-left: -20px;
     }
     
-    @media screen and (max-width: 1200px) {
+    @media screen and (max-width: 1024px) {
             .tags,
             .contact-image,
             .home-page h1::before,
@@ -172,6 +172,7 @@
                 }
                 .cv-button {
                     width: 165px;
+                    padding-left: 10px;
                 }
 
             }

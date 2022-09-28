@@ -200,7 +200,7 @@
 }
 
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1024px) {
 
     .about-page {
 
@@ -218,6 +218,7 @@
         }
         .cv-button {
             width: 165px;
+            padding-left: 10px;
         }
 
         .stage-cube-content {
