@@ -236,8 +236,15 @@
                 background: #ffd700;
                 color: #333
             }
+
+           
         }
         
+        .button-quote  {
+            display: inline-block;
+            margin-bottom: 10px; 
+            margin-left: 48px;      
+        }
 
         .contact-text-zone {
            
@@ -259,8 +266,17 @@
                     box-sizing: border-box;
                     padding: 20px;
                     overflow: visible;
+
+                    h1, cite {
+                        font-size: 20px;
+                        padding: 10px;
+                    }
+
+                    
                 
             }
+
+           
              
         }
 
